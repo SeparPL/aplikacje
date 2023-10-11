@@ -48,9 +48,18 @@ else
     echo "nie";
 ?> -->
 
-<?php
+<!-- <?php
 $wzorzec='/((\bul.)|(\bos.))\S* (\d{3})/';
-$tekst="ul.janakochanowskiego 222 ";
+$tekst="ul.janakochanowskiego 222a ";
+if(preg_match($wzorzec,$tekst,$matches))
+    echo "tak ".$matches[0];
+else
+    echo "nie";
+?> -->
+
+<?php
+$wzorzec='/((\bul.)|(\bos.))\S* (\d{3})+[A-z]/';
+$tekst="ul.janakochanowskiego 222a wojanowice";
 if(preg_match($wzorzec,$tekst,$matches))
     echo "tak ".$matches[0];
 else
