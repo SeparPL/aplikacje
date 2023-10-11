@@ -12,7 +12,7 @@ else
 
 <!-- <?php
 $wzorzec='/[-\w.]+@([-A-z0-9]+\.)[A-z]+/';
-$tekst="szymon.pniaczek@wp.com email";
+$tekst="szymon.nieciag@wp.com email";
 if(preg_match($wzorzec,$tekst,$matches))
     echo "tak ".$matches[0];
 else
@@ -22,7 +22,7 @@ else
 
 <!-- <?php
 $wzorzec='/[-\w.]+@([-A-z0-9]+\.)[A-z]+/';
-$tekst="szymon.pniaczek@wp.com email";
+$tekst="szymon@wp.com email";
 if(preg_match($wzorzec,$tekst,$matches))
     echo "tak ".$matches[0];
 else
