@@ -29,9 +29,28 @@ else
     echo "nie";
 ?> -->
 
-<?php
+<!-- <?php
 $wzorzec='/((\bhttps?:\/\/)|(\bwww\.))\S*/';
 $tekst="https://wp.com ";
+if(preg_match($wzorzec,$tekst,$matches))
+    echo "tak ".$matches[0];
+else
+    echo "nie";
+?> -->
+
+
+<!-- <?php
+$wzorzec='/[0-9]{11}/';
+$tekst="12345678901 ";
+if(preg_match($wzorzec,$tekst,$matches))
+    echo "tak ".$matches[0];
+else
+    echo "nie";
+?> -->
+
+<?php
+$wzorzec='/((\bul.)|(\bos.))\S* (\d{3})/';
+$tekst="ul.janakochanowskiego 222 ";
 if(preg_match($wzorzec,$tekst,$matches))
     echo "tak ".$matches[0];
 else
