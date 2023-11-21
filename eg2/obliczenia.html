@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="styl2.css">
+<meta charset="UTF-8">
+
+<div>
+    <title>Stacja paliw</title>
+</div>
+
+<div class="baner">
+    <h1>Całodobowa stacja paliw</h1>
+</div>
+
+<div class="menu">
+    <a href="stacja.html"><img src="home.png" id="home"></a>
+    <a href="obliczenia.html"><img src="znak.png" id="znak"></a>
+    <a href="kwerendy.txt" id="dokumenty">Pobierz dokumenty</a>
+</div>
+
+<div class="lewy">
+    <h2>Orientacyjny koszt paliwa</h2>
+    Rodzaj paliwa (1-benzyna, 2-olejnapędowy):<br><input type="number" id="n" name="n"><br>
+    Ile litrów?:<br><input type="number" id="l" name="l"><br>
+    <button onclick="paliwo()" id="button">OBLICZ</button>
+    <p id="odp"></p>
+
+</div>
+<script>
+    function paliwo(){
+        let a=document.querySelector("#n").value;
+        let b=document.querySelector("#l").value;
+        let cena;
+        if (a==1){
+            cena=4;
+        }
+        else if(a==2){
+            cena=3,5;
+        }
+        else{
+            cena=0;
+        }
+        document.querySelector("#odp").innerHTML=cena*b;
+    };
+</script>
+<div class="prawy">
+    <img src="samochod.png" alt="samochód" class="samochod">
+</div>
+
+<div class="stopka">
+    <p>Stronę opracował:</p>
+</div>
