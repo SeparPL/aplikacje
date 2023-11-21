@@ -1,0 +1,40 @@
+<form name="formularz" onSubmit="return false;">
+<i>Podaj pierwsza liczbe:</i> <input type="number" value="liczba1" id="liczba1"><br>
+<i>Podaj druga liczbe: </i> <input type="number" value="liczba2" id="liczba2"><br>
+<button onclick="fun(1);">dodawanie</button>
+<button onclick="fun(2);">odejmowanie</button>
+<button onclick="fun(3);">mnozenie</button>
+<button onclick="fun(4);">dzielenie</button>
+<br>
+<output id="wynik"></output>
+</form>
+
+<script>
+function fun(operacja){
+    let 
+    liczba1=parseInt(document.querySelector("#liczba1").value);
+    let 
+    liczba2=parseInt(document.querySelector("#liczba2").value);
+    
+    let wynik;
+
+    if (isNaN(liczba1) || isNaN(liczba2)){
+        wynik="Proszę uzupełnić obie liczby";
+    }
+    else{
+        switch(operacja){
+            case 1: wynik=liczba1+liczba2;break;
+            case 2: wynik=liczba1-liczba2;break;
+            case 3: wynik=liczba1*liczba2;break;
+            case 4: 
+                if (liczba2==0){
+                    wynik="nie dzielimy przez zero"
+                }
+                else{
+                    wynik=liczba1/liczba2;break;
+                }
+        }
+    }
+    document.querySelector("#wynik").innerHTML=wynik;
+}
+</script>
