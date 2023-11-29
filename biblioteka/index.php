@@ -1,4 +1,6 @@
 
+<!DOCTYPE html>
+<html lang="pl">
 <meta charset="UTF-8">
 <title>Biblioteka Publiczna</title>
 <link rel="stylesheet" href="style.css">

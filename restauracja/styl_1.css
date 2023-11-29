@@ -1,0 +1,38 @@
+*{
+    background-color: #F6E5DC;
+    font-family: verdana;
+}
+.naglowek{
+    text-align: center;
+    background:  #2F180C;
+    color: khaki;
+    height: 60px;
+}
+.lewy{
+    float:left;
+    width: 60%;
+}
+.prawy{
+    font-size: 150%;
+    padding: 70px;
+}
+.dolny{
+    background-color:  #D0B6A8;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+}
+.stopka{
+    background-color: #2F180C;
+    height: 60px;
+    color: khaki;
+}
+img{
+    height: 350px;
+}
+.s1{
+    margin: 10px;
+    padding: 5px;
+    background-color:  #2F180C;
+    color: khaki;
+}

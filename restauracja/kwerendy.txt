@@ -1,0 +1,4 @@
+zad 1 : insert into rezerwacje values("","1","2017-07-04","4","111222333");
+zad 2 : SELECT nazwa,cena FROM `dania` WHERE typ="2";
+zad 3 : SELECT nazwa FROM `dania` WHERE typ="3" and cena<15;
+zad 4 : update pracownicy set stanowisko="4" where stanowisko="3";
