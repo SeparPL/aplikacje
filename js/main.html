@@ -1,0 +1,60 @@
+<!-- <h1 onmouseover="changeText(this)">Kliknij w tekst</h1>
+<script>
+    function changeText(id){
+        id.innerHTML="Nowy Text"
+    }
+</script> -->
+
+<!-- <button id="myButton">Wyswietl Date</button>
+<p id=demo></p>
+
+<script>
+    document.querySelector("#myButton").onclick=displayDate;
+    function displayDate(){
+        let teraz=new Date();
+        let godzina=teraz.getHours();
+        let minuty=teraz.getMinutes();
+        let czas="Godzina: "+godzina+":"+minuty;
+        document.querySelector("#demo").innerHTML=czas;
+    }
+</script> -->
+
+<!-- 
+<input type="text" onfocus="zmienkolor()" id="pole">
+<script>
+    function zmienkolor(){
+        document.querySelector("#pole").style.background="yellow";
+    }
+</script> -->
+
+<!-- <h1>OnChange</h1>
+<label>
+Wpisz swoje imie 
+<input type="text" id="fname" onchange="eventonchange()">
+</label><br>
+<label>
+    Wpisz wiek
+    <input type="number">
+</label>
+
+<script>
+    function eventonchange(){
+        let x=document.querySelector("#fname");
+        x.value=x.value.toUpperCase();
+    }
+</script> -->
+
+<!-- <button id="myButton">Testuj</button>
+<p id="demo"></p>
+<script>
+    let button=document.querySelector("#myButton");
+    button.addEventListener("mouseover",mover);
+    button.addEventListener("click",mclick);
+    function mover(){
+        document.querySelector("#demo").innerHTML+="over<br>";
+    }
+    function mclick(){
+        document.querySelector("#demo").innerHTML+="click<br>";
+    }
+
+</script> -->
