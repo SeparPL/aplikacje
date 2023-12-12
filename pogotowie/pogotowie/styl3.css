@@ -1,0 +1,53 @@
+*{
+    font-family: arial;
+}
+.baner,.stopka{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    
+}
+.lewy,.lewy1{
+    width: 55%;
+    font-size: 120%;
+}
+.srodkowy,.srodkowy1{
+    width: 25%;
+}
+.prawy,.prawy1{
+    width: 20%;
+    text-align: right;
+}
+.glowny{
+    background-color: snow;
+    padding: 70px;
+}
+a{
+    border: dotted 2px saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+li{
+    list-style-type: lower-alpha;
+}
+
+.prawy{
+    float: right;
+}
+.srodkowy{
+    float: right;
+}
+.lewy1{
+    float: left;
+}
+.srodkowy1{
+    float: right;
+}
+.prawy1{
+    float: right;
+}
+h2{
+    padding-top: 25px;
+}
